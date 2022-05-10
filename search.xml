@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>基于hexo搭建个人博客-建站篇（win10）</title>
+    <url>/2022/04/21/%E5%9F%BA%E4%BA%8Ehexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-%E5%BB%BA%E7%AB%99%E7%AF%87%EF%BC%88win10%EF%BC%89/</url>
+    <content><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>正如某博主所说”对任何渴望进步的人来说，写博客&#x2F;文章&#x2F;回答对自己的成长帮助都是巨大的。频率和数量不必过分强求，有话要说就写写，没事就歇歇，随意点。因为坚持写作的那一刻起，你就已经开始受益。”搭建博客花了好几天，期间踩坑无数，遂记录下来以供后来者参考。</p>
+<span id="more"></span>
+
+<hr>
+<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><ul>
+<li>下载安装node.js <a href="https://nodejs.org/en/">https://nodejs.org/en/</a></li>
+</ul>
+<p><a href="https://postimg.cc/svz0CQJL"><img src="https://i.postimg.cc/WbqRr0qs/1.png" alt="1.png"></a></p>
+<ul>
+<li>键盘win+r，弹出运行框输入cmd，进入如下界面，分别输入node -v和npm -v，回车，显示版本号说明安装成功</li>
+</ul>
+<p><a href="https://postimg.cc/c61GfbpC"><img src="https://i.postimg.cc/jqPqYVvH/2.png" alt="2.png"></a></p>
+<ul>
+<li>下载安装git <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></li>
+</ul>
+<p><a href="https://postimg.cc/MMK3fhn8"><img src="https://i.postimg.cc/k4W0zC9D/3.png" alt="3.png"></a></p>
+<ul>
+<li>安装后桌面右键会出现下图</li>
+</ul>
+<p><a href="https://postimg.cc/fJXCyw89"><img src="https://i.postimg.cc/CLrQv5Dm/4.png" alt="4.png"></a></p>
+<ul>
+<li>git安装成功后需要配置邮箱、姓名和SSH密钥，网上有很多教程，在此不展开描述了，想要了解更多，详见廖雪峰git教程 <a href="https://www.liaoxuefeng.com/">https://www.liaoxuefeng.com/</a></li>
+</ul>
+<hr>
+<ul>
+<li><p>注册github <a href="https://github.com/">https://github.com/</a></p>
+</li>
+<li><p>注册后直接登录</p>
+</li>
+</ul>
+<p><a href="https://postimg.cc/5HkLpGPJ"><img src="https://i.postimg.cc/Y9tR2BYv/5.png" alt="5.png"></a></p>
+<ul>
+<li>新建一个仓库</li>
+</ul>
+<p><a href="https://postimg.cc/TpF1PDkR"><img src="https://i.postimg.cc/P5rw2bY8/6.png" alt="6.png"></a></p>
+<ul>
+<li>创建仓库名：用户名小写.github.io，这就是博客创建成功后的访问地址，现在还不能用，创建好先放在这里。</li>
+</ul>
+<p><a href="https://postimg.cc/yJBZVRdD"><img src="https://i.postimg.cc/hGQb1bR1/7.png" alt="7.png"></a> </p>
+<hr>
+<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><ul>
+<li><p>cmd进入运行，输入下方代码利用淘宝镜像安装cnpm，等几分钟,完成后用cnpm -v检查是否安装完成</p>
+<p>  npm install -g cnpm –registy&#x3D;<a href="http://registry.npm.taobao.org/">http://registry.npm.taobao.org</a></p>
+</li>
+</ul>
+<p><a href="https://postimg.cc/QHhCKDDz"><img src="https://i.postimg.cc/c48nj1bd/8.png" alt="8.png"></a></p>
+<p><a href="https://postimg.cc/3k6DvqnD"><img src="https://i.postimg.cc/g0cyfFh4/9.png" alt="9.png"></a></p>
+<ul>
+<li>输入下方代码正式安装hexo,完成后用hexo -v检查是否安装完成</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cnpm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://postimg.cc/mh22TwSx"><img src="https://i.postimg.cc/RCw3Qp60/10.png" alt="10.png"></a></p>
+<ul>
+<li>自己挑一个盘(比如G盘)，命令行输入G:，再输入mkdir blog，打开G盘发现多了一个blog文件夹，回到命令行输入cd blog进入blog目录，输入代码hexo init，等几分钟</li>
+</ul>
+<p><a href="https://postimg.cc/ppzS4NnP"><img src="https://i.postimg.cc/9Fnj4Cmw/11.png" alt="11.png"></a></p>
+<ul>
+<li>这里git必须是配置好邮箱和用户名，否则无法执行hexo init</li>
+<li>下图说明本地hexo博客已经生成</li>
+</ul>
+<p><a href="https://postimg.cc/CRwc2Rg4"><img src="https://i.postimg.cc/NjHZ5XCZ/12.png" alt="12.png"></a></p>
+<ul>
+<li>输入hexo s，复制生成的地址转到浏览器粘贴打开，即可预览博客</li>
+</ul>
+<p><a href="https://postimg.cc/Bjw2CbQb"><img src="https://i.postimg.cc/6QBzt4kr/13.png" alt="13.png"></a></p>
+<hr>
+<h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><ul>
+<li>命令行输入cd blog进入blog文件夹，输入下方代码</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cnpm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>去硬盘打开blog文件夹，找到_config文件，用记事本或者其他编辑器打开，找到#Deployment按照下面格式输入，repo要填准备时自己新建仓库的地址</p>
+<figure class="highlight plaintext"><figcaption><span>Deployment</span></figcaption><table><tr><td class="code"><pre><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/BonneauCode/bonneaucode.github.io</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>命令行输入hexo d将博客部署到GitHub仓库，部署时可能要输入github用户名和密码，密码输入时是看不见的，部署完成后浏览器输入自己的用户名小写.github.io并刷新，即可看见搭建的个人博客啦</p>
+</li>
+</ul>
+]]></content>
+  </entry>
+</search>
